@@ -94,11 +94,8 @@ class LOGCFG:
                            for key, elem in self.paramsLogger.items()
                            if key in self.paramsProfile.keys()}
 
-    def toPostfix(self, infix_src):
-        return infix_src
-
-    def print(self, typeFile='ssmk'):
-        print('type = {}'.format(typeFile))
+    def print(self, fileType='ssmk'):
+        print('type = {}'.format(fileType))
 
         idx = 1
         for key, elem in self.dictParams.items():
@@ -127,6 +124,7 @@ class LOGCFG:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument('--type', type=str, help='logcfg type (ssmk or ssmcan)')
     requiredNamed = parser.add_argument_group('required named arguments')
     requiredNamed.add_argument(
         '--profile', type=str, help='RomRaider XML Profile', required=True)
@@ -134,4 +132,5 @@ if __name__ == "__main__":
         '--logger', type=str, help='Logger XML file', required=True)
     args = parser.parse_args()
     logcfg = LOGCFG(args.profile, args.logger)
-    logcfg.print()
+    fileType = args.type if args.type else 'ssmk'
+    logcfg.print(fileType)
