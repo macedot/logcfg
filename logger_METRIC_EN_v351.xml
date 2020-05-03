@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE logger SYSTEM "logger.dtd">
-<!--ROMRAIDER METRIC UNITS LOGGER DEFINITION FILE (VERSION 350) 20200407_165225 [en]
-347 20191017_202701 Added ECU ID: 2A04446305 to extended parameters
-348 20191020_184616 Updated ECU ID: 2F4A346006 extended parameters Changed address/length/bit entry for ECU ID 2F4A346006 for extended parameter E88
-Changed address/length/bit entry for ECU ID 2F4A346006 for extended parameter E51
-349 20200119_180042 Added ECU ID: 260A254105 to extended parameters
-350 20200407_165225 Add Nissan logging parameters
+<!--ROMRAIDER METRIC UNITS LOGGER DEFINITION FILE (VERSION 351) 20200502_193828 [en]
+351 20200502_193828 Added ECU ID: A62A907107 to extended parameters
 
 TERMS, CONDITIONS, AND DISCLAIMERS
 - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -25,7 +21,7 @@ As always, use at your own risk.
 
 These definitions are created for FREE without any sort of guarantee. The developers cannot be held liable for
 any damage or injury incurred as a result of these definitions. USE AT YOUR OWN RISK! -->
-<logger version="350">
+<logger version="351">
     <protocols>
         <protocol id="SSM" baud="4800" databits="8" stopbits="1" parity="0" connect_timeout="2000" send_timeout="55">
             <transports>
@@ -3775,7 +3771,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="671B344007,B22A904107">
                         <address length="4">0xFF32EC</address>
                     </ecu>
-                    <ecu id="8B12784007,8B12787007,A62A907007">
+                    <ecu id="8B12784007,8B12787007,A62A907007,A62A907107">
                         <address length="4">0xFF32F8</address>
                     </ecu>
                     <ecu id="521A355007,621A356007">
@@ -4089,7 +4085,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="4">0xFF66A4</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF66B0</address>
                     </ecu>
                     <ecu id="7132514007,71F2514007">
@@ -4925,7 +4921,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address>0xFFB5F1</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFFB629</address>
                     </ecu>
                     <ecu id="821B367007">
@@ -5074,7 +5070,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8A12787107,8F12587007">
                         <address length="4">0xFF5CB4</address>
                     </ecu>
-                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CB8</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -5214,7 +5210,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8512506007,8A12584007,8A12587007,8A12784007,8F12583007,8F12783007">
                         <address length="4">0xFF5CA0</address>
                     </ecu>
-                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CA4</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -5354,7 +5350,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8512506007,8A12584007,8A12587007,8A12784007,8F12583007,8F12783007">
                         <address length="4">0xFF5CA8</address>
                     </ecu>
-                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CAC</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -5502,7 +5498,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8A12787107,8F12587007">
                         <address length="4">0xFF5CB0</address>
                     </ecu>
-                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CB4</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -5822,7 +5818,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="4">0xFF6580</address>
                     </ecu>
-                    <ecu id="6C045A3007,7104584007,A62A904007,A62A907007">
+                    <ecu id="6C045A3007,7104584007,A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF658C</address>
                     </ecu>
                     <ecu id="8424385107">
@@ -6487,7 +6483,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF8518</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF8534</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -7086,7 +7082,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF8588</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF85A4</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -7679,7 +7675,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF85B4</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF85D0</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -8020,7 +8016,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="4">0xFF93B4</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF93C8</address>
                     </ecu>
                     <ecu id="2E12495106,2E12495206">
@@ -8427,7 +8423,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF8514</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF8530</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -8846,7 +8842,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B02A904007,B02A907007">
                         <address length="4">0xFF31FC</address>
                     </ecu>
-                    <ecu id="671B344007,A62A907007">
+                    <ecu id="671B344007,A62A907007,A62A907107">
                         <address length="4">0xFF3204</address>
                     </ecu>
                     <ecu id="13521035FF,135291419F,8112597107,8112597207,B22A904107">
@@ -9310,7 +9306,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B02A904007,B02A907007">
                         <address length="4">0xFF3204</address>
                     </ecu>
-                    <ecu id="671B344007,A62A907007">
+                    <ecu id="671B344007,A62A907007,A62A907107">
                         <address length="4">0xFF320C</address>
                     </ecu>
                     <ecu id="13521035FF,135291419F,8112597107,8112597207,B22A904107">
@@ -9777,7 +9773,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B02A904007,B02A907007">
                         <address length="4">0xFF320C</address>
                     </ecu>
-                    <ecu id="671B344007,A62A907007">
+                    <ecu id="671B344007,A62A907007,A62A907107">
                         <address length="4">0xFF3214</address>
                     </ecu>
                     <ecu id="13521035FF,135291419F,8112597107,8112597207,B22A904107">
@@ -10241,7 +10237,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B02A904007,B02A907007">
                         <address length="4">0xFF3214</address>
                     </ecu>
-                    <ecu id="671B344007,A62A907007">
+                    <ecu id="671B344007,A62A907007,A62A907107">
                         <address length="4">0xFF321C</address>
                     </ecu>
                     <ecu id="13521035FF,135291419F,8112597107,8112597207,B22A904107">
@@ -10780,7 +10776,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF7C0C</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF7C18</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -11876,7 +11872,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF7728</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF7734</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -12679,7 +12675,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="6C045A3007,7104584007">
                         <address length="4">0xFF64BC</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF64C4</address>
                     </ecu>
                     <ecu id="13521810FF,135291431F,4D42584006,4D42594006,4D425A6006,4DA2584006">
@@ -13394,7 +13390,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="5B121A4007,B22A904107">
                         <address length="4">0xFF8264</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF8274</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -13690,7 +13686,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="6C045A3007,7104584007">
                         <address length="4">0xFF6594</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF659C</address>
                     </ecu>
                     <ecu id="8424385107">
@@ -14367,7 +14363,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF7F8C</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF7F98</address>
                     </ecu>
                     <ecu id="B22A904107">
@@ -14963,7 +14959,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF88A8</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF88B8</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -15556,7 +15552,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF88A0</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF88B0</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -16170,7 +16166,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address>0xFF85C0</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF85DC</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -16559,7 +16555,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address>0xFF6B52</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6B5D</address>
                     </ecu>
                     <ecu id="73243C7507">
@@ -17254,7 +17250,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007,B22A904107">
                         <address length="4">0xFF80EC</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF810C</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -17823,7 +17819,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address>0xFF7C13</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF7C1F</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -18687,7 +18683,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8A12787107,8F12587007">
                         <address length="4">0xFF5CC8</address>
                     </ecu>
-                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8B12784007,8B12787007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CCC</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -19502,7 +19498,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="821B367007">
                         <address length="4">0xFF7A8C</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF7A90</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -19780,7 +19776,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6B9E</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BAA</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -20280,7 +20276,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6BA2</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BAE</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -20966,7 +20962,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF7D10</address>
                     </ecu>
-                    <ecu id="521A355007,621A356007,A62A907007">
+                    <ecu id="521A355007,621A356007,A62A907007,A62A907107">
                         <address length="4">0xFF7D1C</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -21267,7 +21263,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6BA8</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BB4</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -21718,7 +21714,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address>0xFF6BB9</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6BC5</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -22541,7 +22537,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6B84</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6B90</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -22951,7 +22947,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="13521031FF,4242504106,4242507006,4242584106,4252504106,4252584106,425258B006,42A2504106,8B12784007,8B12787007">
                         <address length="2">0xFF6BB4</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BC0</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -23279,7 +23275,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="4">0xFF6884</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF6890</address>
                     </ecu>
                     <ecu id="761B347007">
@@ -23694,7 +23690,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6B8C</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6B98</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -24178,7 +24174,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6B87</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6B93</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -24462,7 +24458,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="13521031FF,4242504106,4242507006,4242584106,4252504106,4252584106,425258B006,42A2504106">
                         <address>0xFF6BC8</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6BCF</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -24833,7 +24829,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="13521031FF,4242504106,4242507006,4242584106,4252504106,4252584106,425258B006,42A2504106">
                         <address>0xFF6BCB</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6BD2</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -25207,7 +25203,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="13521031FF,4242504106,4242507006,4242584106,4252504106,4252584106,425258B006,42A2504106">
                         <address>0xFF6BCD</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6BD1</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -25693,7 +25689,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6B96</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BA2</address>
                     </ecu>
                     <ecu id="75525A4007">
@@ -26866,7 +26862,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address>0xFF6BCF</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address>0xFF6BDB</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -27102,7 +27098,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="6C045A3007,7104584007">
                         <address length="4">0xFF64C0</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF64C8</address>
                     </ecu>
                     <ecu id="13521810FF,135291431F,4D42584006,4D42594006,4D425A6006,4DA2584006">
@@ -28006,7 +28002,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address length="4">0xFF8580</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF859C</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -28064,7 +28060,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8512506007,8A12584007,8A12587007,8A12784007,8F12583007,8F12783007">
                         <address length="4">0xFF5CA4</address>
                     </ecu>
-                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,B02A904007,B02A907007,B22A904107">
+                    <ecu id="8A12787107,8B12784007,8B12787007,8F12587007,A62A904007,A62A907007,A62A907107,B02A904007,B02A907007,B22A904107">
                         <address length="4">0xFF5CA8</address>
                     </ecu>
                     <ecu id="7404504007">
@@ -28576,7 +28572,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF7B78</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address length="4">0xFF7B84</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -28877,7 +28873,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="2">0xFF6BA0</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BAC</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -29667,7 +29663,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="A62A904007">
                         <address length="4">0xFF76E8</address>
                     </ecu>
-                    <ecu id="752B367307,A62A907007">
+                    <ecu id="752B367307,A62A907007,A62A907107">
                         <address length="4">0xFF76F4</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -29950,7 +29946,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="13521031FF,4242504106,4242507006,4242584106,4252504106,4252584106,425258B006,42A2504106">
                         <address length="2">0xFF6B9E</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="2">0xFF6BA6</address>
                     </ecu>
                     <ecu id="6304504007,6304504107">
@@ -30911,7 +30907,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="8B12784007,8B12787007">
                         <address length="4">0xFF697C</address>
                     </ecu>
-                    <ecu id="A62A904007,A62A907007">
+                    <ecu id="A62A904007,A62A907007,A62A907107">
                         <address length="4">0xFF6988</address>
                     </ecu>
                     <ecu id="73243C7507">
@@ -31209,7 +31205,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address>0xFF84D5</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF84F1</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -31394,7 +31390,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address>0xFF84D6</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF84F2</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -31579,7 +31575,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address>0xFF84D7</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF84F3</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -31761,7 +31757,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <ecu id="B22A904107">
                         <address>0xFF84D8</address>
                     </ecu>
-                    <ecu id="A62A907007">
+                    <ecu id="A62A907007,A62A907107">
                         <address>0xFF84F4</address>
                     </ecu>
                     <ecu id="8B12784007,8B12787007">
@@ -36050,7 +36046,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                     <conversions>
                         <conversion units="V" storagetype="uint8"  expr="x*.1" format="0.0" gauge_min="0" gauge_max="25" gauge_step="1" />
                     </conversions>
-                </ecuparam>
+                </ecuparam>         
                 <ecuparam id="E13" name="* Lambda Integrator - Bank 1" desc="E13-(TI_AD_FAC_1 or LTFT 1)" group="0x0B" subgroup="0x03" groupsize="34" target="1">
                     <ecu id="1429764,1430844,7526753,7500255">
                         <address>0x15</address>
@@ -36148,7 +36144,7 @@ any damage or injury incurred as a result of these definitions. USE AT YOUR OWN 
                         <conversion units="ms" storagetype="uint16" expr="(x-32768)*.004" format="0.00" gauge_min="-5" gauge_max="5" gauge_step="1" />
                         <conversion units="µs" storagetype="uint16" expr="(x-32768)*4" format="0" gauge_min="-5000" gauge_max="5000" gauge_step="1000" />
                     </conversions>
-                </ecuparam>
+                </ecuparam>             
                 <ecuparam id="E21" name="** Lambda Multiplicative Adaptation - Bank 1" desc="E21-(TI_AD_FAC_1)" group="0x0B" subgroup="0x91" groupsize="10" target="1">
                     <ecu id="1429764,1430844,7526753,7500255">
                         <address>0x02</address>
