@@ -39,7 +39,7 @@ def getParam(paramsLogger, id: str, unit: str) -> dict:
     return None
 
 
-def getConversion(nodeParam : minidom.Element, unit: str) -> str:
+def getConversion(nodeParam: minidom.Element, unit: str) -> str:
     for item in nodeParam.getElementsByTagName('conversion'):
         if unit == item.getAttribute('units'):
             expr = item.getAttribute('expr')
@@ -124,7 +124,8 @@ class LOGCFG:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--type', type=str, help='logcfg type (ssmk or ssmcan)')
+    parser.add_argument('--type', type=str,
+                        help='logcfg type (ssmk or ssmcan)')
     requiredNamed = parser.add_argument_group('required named arguments')
     requiredNamed.add_argument(
         '--profile', type=str, help='RomRaider XML Profile', required=True)
