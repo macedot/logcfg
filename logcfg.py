@@ -1,5 +1,6 @@
 from convertion import Conversion
 from xml.dom import minidom
+import argparse
 
 def infixToPosfix(src : str) -> str:
     obj = Conversion(len(src))
@@ -106,5 +107,10 @@ class LOGCFG:
         print('action = stop')
 
 if __name__ == "__main__":
-    logcfg = LOGCFG('RR_LOG.xml', 'logger_METRIC_EN_v350.xml')
+    parser = argparse.ArgumentParser()
+    requiredNamed = parser.add_argument_group('required named arguments')
+    requiredNamed.add_argument('--profile', type=str, help='RomRaider XML Profile', required=True)
+    requiredNamed.add_argument('--logger', type=str, help='Logger XML file', required=True)
+    args = parser.parse_args()
+    logcfg = LOGCFG(args.profile, args.logger)
     logcfg.print()
