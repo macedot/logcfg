@@ -78,7 +78,7 @@ def paramsToDict(nodeParam, unit: str):
         dictRet['depends'].append(ref.getAttribute('parameter'))
     dictRet['unit'] = unit
     dictRet['scalingrpn'] = getConversion(nodeParam, unit)
-    dictRet['databit'] = getStorageSize(nodeParam, unit)
+    dictRet['databits'] = getStorageSize(nodeParam, unit)
     return dictRet
 
 
@@ -105,7 +105,7 @@ class LOGCFG:
             print('')
             print(";{:03d}: {} - {} ({})".format(idx,
                                                  elem['id'], elem['name'], elem['unit']))
-            for key in ['paramname', 'paramid', 'databit', 'scalingrpn']:
+            for key in ['paramname', 'paramid', 'databits', 'scalingrpn']:
                 if elem.get(key):
                     print("{}{} = {}".format(skip, key, elem[key]))
             idx += 1
@@ -133,5 +133,5 @@ if __name__ == "__main__":
         '--logger', type=str, help='Logger XML file', required=True)
     args = parser.parse_args()
     logcfg = LOGCFG(args.profile, args.logger)
-    fileType = args.type if args.type else 'ssmk'
+    fileType = 'ssmcan' if 'can' in args.type else 'ssmk'
     logcfg.print(fileType)
